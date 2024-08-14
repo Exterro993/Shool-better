@@ -1,0 +1,820 @@
+main {
+  background-image: url(../images/hero\ shape\ 8.svg);
+  background-repeat: no-repeat;
+
+  .hero {
+    @media(max-width:800px) {
+      background-image: none;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/hero-img.png);
+    background-repeat: no-repeat;
+    background-position: 500px 0;
+
+    &-top {
+      color: rgba(255, 255, 255, 1);
+      font-family: 'Montserrat';
+
+      h4 {
+        line-height: 24px;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        padding-bottom: 35px;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: clamp(24px, 5.55vw, 58px);
+        line-height: 80px;
+        letter-spacing: 0.2px;
+      }
+
+      h3 {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+      }
+
+      .buttons {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+        padding-top: 35px;
+
+        button:nth-child(1) {
+          border-radius: 5px;
+          padding: 15px 40px 15px 40px;
+          background-color: rgba(141, 92, 246, 1);
+          margin-right: 10px;
+        }
+
+        button:nth-child(2) {
+          border-radius: 5px;
+          padding: 15px 40px 15px 40px;
+          background-color: transparent;
+          border: 1px solid rgba(236, 236, 236, 1);
+        }
+      }
+    }
+
+    &-bottom {
+      padding-top: 80px;
+
+      .hero_cards {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        @media(max-width:800px) {
+          flex-wrap: wrap;
+          justify-content: center;
+          text-align: center;
+        }
+
+        .hero-card {
+          max-width: 328px;
+          background-color: rgba(255, 255, 255, 1);
+          padding: 38px;
+          font-family: "Montserrat";
+
+          h5 {
+            font-weight: 700;
+            padding-bottom: 20px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+          }
+
+          p {
+            color: rgba(115, 115, 115, 1);
+            letter-spacing: 0.2px;
+            font-size: 14px;
+            line-height: 20px;
+          }
+
+          .hero-card_img {
+            padding-bottom: 20px;
+          }
+
+          .hr {
+            @media(max-width:800px) {
+              margin: 0 auto;
+              margin-bottom: 20px;
+            }
+
+            margin-bottom: 20px;
+            width: 50px;
+            height: 2px;
+            background-color: rgba(231, 64, 64, 1);
+          }
+        }
+      }
+    }
+  }
+
+  .customers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Montserrat';
+
+    .customers-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+      @media (max-width:800px) {
+        flex-wrap: wrap;
+      }
+
+      .customers-wrap {
+        width: 238px;
+        text-align: center;
+
+        h1 {
+          font-weight: 700;
+          font-size: clamp(24px, 5.16vw, 58px);
+          line-height: 80px;
+          letter-spacing: 0.2px;
+          color: rgba(141, 92, 246, 1);
+        }
+
+        span {
+          color: rgba(255, 255, 255, 1);
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 700;
+        }
+      }
+
+    }
+  }
+
+  .popular-courses {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .popular-courses-container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      gap: 50px;
+
+      @media(max-width:800px) {
+        flex-wrap: wrap-reverse;
+      }
+    }
+
+    .popular-courses-left {
+      .hr-2 {
+        width: 94px;
+        height: 7px;
+        background-color: rgba(231, 64, 64, 1);
+      }
+
+      h1 {
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: clamp(20px, 3.84vw, 40px);
+        line-height: 50px;
+        padding-top: clamp(17px, 3.36vw, 35px);
+        letter-spacing: 0.2px;
+      }
+
+      p {
+        padding-top: clamp(17px, 3.36vw, 35px);
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Montserrat';
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        font-size: 14px;
+      }
+
+      a {
+        color: rgba(141, 92, 246, 1);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Montserrat';
+        padding-top: clamp(17px, 3.36vw, 35px);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+      }
+    }
+
+    .popular-courses-right {
+      max-width: 499px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  #courses {
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+    .courses-container {
+      font-family: 'Montserrat';
+
+      h6 {
+        font-weight: 700;
+        color: rgba(141, 92, 246, 1);
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+      }
+
+      h1 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 700;
+        font-size: clamp(20px, 3.84vw, 40px);
+        letter-spacing: 0.2px;
+        line-height: 50px;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 1);
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        font-size: 14px;
+      }
+
+      .courses-cards {
+        padding-top: 100px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        @media(max-width:1000px) {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .course-card {
+          width: 238px;
+
+          .courses-card-top {
+            position: relative;
+            z-index: 1;
+            max-width: 238px;
+            height: 300px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+
+            .sale {
+              width: 51px;
+              color: rgba(255, 255, 255, 1);
+              background-color: rgba(231, 64, 64, 1);
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 24px;
+              letter-spacing: 0.2px;
+              box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+              border-radius: 3px;
+              padding: 0 10px 0 10px;
+              position: absolute;
+              z-index: 2;
+              top: 20px;
+              left: 20px;
+            }
+
+            .img-buttons {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              position: absolute;
+              z-index: 2;
+              left: 49px;
+              bottom: 24px;
+
+              button {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 1);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                  width: 25px;
+                }
+              }
+            }
+          }
+
+          .courses-card-bottom {
+            background-color: rgba(255, 255, 255, 1);
+
+            .rating {
+              padding-top: 10px;
+              width: 182px;
+              margin: 0 auto;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              .rating-star {
+                width: 50px;
+                height: 26px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                border-radius: 20px;
+                background-color: rgba(38, 51, 93, 1);
+                padding: 5px 5px 5px 5px;
+
+                p {
+                  font-size: 12px;
+                }
+              }
+
+              p {
+                color: rgba(141, 92, 246, 1);
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+              }
+            }
+
+            .titles {
+              padding-top: 10px;
+              width: 182px;
+              margin: 0 auto;
+
+              h5 {
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+
+              }
+
+              p {
+                padding-top: 10px;
+                color: rgba(115, 115, 115, 1);
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+              }
+
+            }
+
+            .sales {
+              padding-top: 10px;
+              width: 182px;
+              margin: 0 auto;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              p {
+                color: rgba(115, 115, 115, 1);
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+              }
+            }
+
+            .price {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              width: 182px;
+              margin: 0 auto;
+              display: flex;
+              align-items: center;
+              gap: 5px;
+
+              span {
+                color: rgba(189, 189, 189, 1);
+              }
+
+              p {
+                color: rgba(255, 123, 82, 1);
+              }
+            }
+
+            button {
+              margin-top: 10px;
+              margin-bottom: 35px;
+              margin-left: 25px;
+              gap: 10px;
+              background-color: transparent;
+              padding: 10px 20px 10px 20px;
+              border-radius: 37px;
+              border: 1px solid rgba(141, 92, 246, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #pricing {
+    padding-bottom: 100px;
+
+    .pricing-container {
+      font-family: 'Montserrat';
+
+      .pricing-top {
+        padding-bottom: 100px;
+
+        h1 {
+          color: rgba(255, 255, 255, 1);
+          font-weight: 700;
+          font-size: clamp(20px, 3.84vw, 40px);
+          letter-spacing: 0.2px;
+          line-height: 50px;
+        }
+
+        h5 {
+          color: rgba(141, 92, 246, 1);
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+        }
+
+        p {
+          color: rgba(255, 255, 255, 1);
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+        }
+      }
+
+      .pricing-bottom {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+
+        @media (max-width:1000px) {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .pricing-card {
+          padding-top: 35px;
+          max-width: 323px;
+
+          .new {
+            position: absolute;
+            z-index: 2;
+            width: 90px;
+            height: 90px;
+            background-color: rgba(231, 124, 64, 1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: clamp(15px, 2.29vw, 24px);
+            line-height: 32px;
+            letter-spacing: 0.1px;
+            top: -29px;
+            right: -30px;
+            color: rgba(255, 255, 255, 1);
+          }
+
+
+
+          .card-img {
+            max-width: 96px;
+            margin: 0 auto;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          h1 {
+            padding-top: 35px;
+            max-width: 243px;
+            margin: 0 auto;
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 0.1px;
+            text-align: center;
+            line-height: 32px;
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 0.1px;
+            line-height: 32px;
+          }
+
+          p {
+            padding-top: 35px;
+            text-align: center;
+            max-width: 243px;
+            margin: 0 auto;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+
+          }
+
+          .price {
+            max-width: 243px;
+            margin: 0 auto;
+            text-align: center;
+
+            p {
+              font-weight: 700;
+              font-size: clamp(20px, 3.84vw, 40px);
+              letter-spacing: 0.2px;
+              line-height: 50px;
+            }
+
+            span {
+              color: rgba(142, 194, 242, 1);
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 24px;
+              letter-spacing: 0.2px;
+            }
+          }
+
+          button {
+            margin-top: 35px;
+            margin-right: clamp(10px, 3.84vw, 40px);
+            margin-left: clamp(10px, 3.84vw, 40px);
+            color: rgba(255, 255, 255, 1);
+            padding: 15px 80px 15px 80px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            border-radius: 5px;
+          }
+
+          ul {
+            padding-bottom: 50px;
+            padding-top: 35px;
+            max-width: 243px;
+            margin: 0 auto;
+
+            li {
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 24px;
+              letter-spacing: 0.2px;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+        }
+
+        .pricing-card:not(:nth-child(2)) {
+          background-color: rgba(255, 255, 255, 1);
+
+          h1 {
+            color: rgba(37, 43, 66, 1);
+          }
+
+          p {
+            color: rgba(115, 115, 115, 1);
+          }
+
+          .price {
+            p {
+              color: rgba(141, 92, 246, 1);
+            }
+          }
+
+          button {
+            background-color: rgba(141, 92, 246, 1);
+          }
+
+          ul {
+            li {
+              color: rgba(37, 43, 66, 1);
+            }
+          }
+        }
+
+        .pricing-card:nth-child(2) {
+          background-color: rgba(141, 92, 246, 1);
+
+          h1 {
+            color: rgba(255, 255, 255, 1);
+          }
+
+          p {
+            color: rgba(255, 255, 255, 1);
+          }
+
+          button {
+            background-color: rgba(45, 192, 113, 1);
+          }
+
+          ul {
+            li {
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .solutions {
+    padding-bottom: 100px;
+
+    .solutions-container {
+      font-family: 'Montserrat';
+
+      .solutions-top {
+        padding-bottom: 100px;
+
+        h3 {
+          color: rgba(141, 92, 246, 1);
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+        }
+
+        h1 {
+          color: rgba(255, 255, 255, 1);
+          font-weight: 700;
+          font-size: clamp(20px, 3.84vw, 40px);
+          letter-spacing: 0.2px;
+          line-height: 50px;
+        }
+
+
+        h2 {
+          color: rgba(255, 255, 255, 1);
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
+      }
+
+      .solutions-bottom {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        @media(max-width:1000px) {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .solutions-card {
+          padding-left: clamp(47px, 8.99vw, 94px);
+          padding-right: clamp(47px, 8.99vw, 94px);
+          padding-top: 25px;
+          padding-bottom: 25px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 508px;
+          text-align: center;
+          background-color: rgba(255, 255, 255, 1);
+
+          .card-img {
+            padding-bottom: 30px;
+            max-width: 128px;
+
+            img {
+              border-radius: 50%;
+              width: 100%;
+            }
+          }
+
+          p {
+            padding-bottom: 15px;
+            color: rgba(115, 115, 115, 1);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            max-width: 320px;
+          }
+
+          .stars {
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+          }
+
+          ul {
+            li:nth-child(1) {
+              color: rgba(37, 43, 66, 1);
+              font-weight: 700;
+              line-height: 24px;
+              letter-spacing: 0.1px;
+            }
+
+            li:nth-child(2) {
+              color: rgba(115, 115, 115, 1);
+              font-weight: 700;
+              line-height: 24px;
+              font-size: 14px;
+              padding-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .newsletter {
+    font-family: 'Montserrat';
+    text-align: center;
+    padding-bottom: 100px;
+
+    h2 {
+      color: rgba(141, 92, 246, 1);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+    }
+
+    h1 {
+      color: rgba(255, 255, 255, 1);
+      font-weight: 700;
+      font-size: clamp(20px, 3.84vw, 40px);
+      letter-spacing: 0.2px;
+      line-height: 50px;
+    }
+
+    h3 {
+      color: rgba(255, 255, 255, 1);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      padding-bottom: clamp(40px, 7.65vw, 80px);
+    }
+    form {
+      margin: 0 auto;
+      max-width: 750px;
+      border-radius: 5px;
+      max-height: 58px;
+      margin-left: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(255, 255, 255, 1);
+      @media(max-width:835px){
+        max-width: 300px;
+      }
+      @media(max-width:550px){
+        max-width: 100px;
+      }
+      input {
+        background-color: transparent;
+        outline: 0;
+        padding-left: 20px;
+        border: 0;
+      }
+      
+      input::placeholder {
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+      }
+      
+      button {
+        background-color: rgba(141, 92, 246, 1);
+        border-radius: 0px 5px 5px 0px;
+        padding: 15px 22.5px 15px 22.5px;
+        margin-left: 470px;
+        @media(max-width:835px){
+          margin-left: 100px;
+        }
+        @media(max-width:550px){
+          margin-left: -90px;
+        }
+      }
+    }
+  }
+}

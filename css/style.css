@@ -1,0 +1,896 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+@media (max-width: 1050px) {
+  .header-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.header-container .logo {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: clamp(15px, 2.29vw, 24px);
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: rgb(255, 255, 255);
+}
+.header-container .links {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+.header-container .log {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+.header-container .log button {
+  font-family: "Montserrat";
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.header-container .log button img {
+  padding-left: 15px;
+}
+.header-container .log button:nth-child(2) {
+  background-color: rgb(141, 92, 246);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+main {
+  background-image: url(../images/hero\ shape\ 8.svg);
+  background-repeat: no-repeat;
+}
+main .hero {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/hero-img.png);
+  background-repeat: no-repeat;
+  background-position: 500px 0;
+}
+@media (max-width: 800px) {
+  main .hero {
+    background-image: none;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+main .hero-top {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+}
+main .hero-top h4 {
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  padding-bottom: 35px;
+}
+main .hero-top h1 {
+  font-weight: 700;
+  font-size: clamp(24px, 5.55vw, 58px);
+  line-height: 80px;
+  letter-spacing: 0.2px;
+}
+main .hero-top h3 {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+main .hero-top .buttons {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  padding-top: 35px;
+}
+main .hero-top .buttons button:nth-child(1) {
+  border-radius: 5px;
+  padding: 15px 40px 15px 40px;
+  background-color: rgb(141, 92, 246);
+  margin-right: 10px;
+}
+main .hero-top .buttons button:nth-child(2) {
+  border-radius: 5px;
+  padding: 15px 40px 15px 40px;
+  background-color: transparent;
+  border: 1px solid rgb(236, 236, 236);
+}
+main .hero-bottom {
+  padding-top: 80px;
+}
+main .hero-bottom .hero_cards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+@media (max-width: 800px) {
+  main .hero-bottom .hero_cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+main .hero-bottom .hero_cards .hero-card {
+  max-width: 328px;
+  background-color: rgb(255, 255, 255);
+  padding: 38px;
+  font-family: "Montserrat";
+}
+main .hero-bottom .hero_cards .hero-card h5 {
+  font-weight: 700;
+  padding-bottom: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+main .hero-bottom .hero_cards .hero-card p {
+  color: rgb(115, 115, 115);
+  letter-spacing: 0.2px;
+  font-size: 14px;
+  line-height: 20px;
+}
+main .hero-bottom .hero_cards .hero-card .hero-card_img {
+  padding-bottom: 20px;
+}
+main .hero-bottom .hero_cards .hero-card .hr {
+  margin-bottom: 20px;
+  width: 50px;
+  height: 2px;
+  background-color: rgb(231, 64, 64);
+}
+@media (max-width: 800px) {
+  main .hero-bottom .hero_cards .hero-card .hr {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+main .customers {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: "Montserrat";
+}
+main .customers .customers-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 800px) {
+  main .customers .customers-wrapper {
+    flex-wrap: wrap;
+  }
+}
+main .customers .customers-wrapper .customers-wrap {
+  width: 238px;
+  text-align: center;
+}
+main .customers .customers-wrapper .customers-wrap h1 {
+  font-weight: 700;
+  font-size: clamp(24px, 5.16vw, 58px);
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  color: rgb(141, 92, 246);
+}
+main .customers .customers-wrapper .customers-wrap span {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+main .popular-courses {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+main .popular-courses .popular-courses-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+@media (max-width: 800px) {
+  main .popular-courses .popular-courses-container {
+    flex-wrap: wrap-reverse;
+  }
+}
+main .popular-courses .popular-courses-left .hr-2 {
+  width: 94px;
+  height: 7px;
+  background-color: rgb(231, 64, 64);
+}
+main .popular-courses .popular-courses-left h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: clamp(20px, 3.84vw, 40px);
+  line-height: 50px;
+  padding-top: clamp(17px, 3.36vw, 35px);
+  letter-spacing: 0.2px;
+}
+main .popular-courses .popular-courses-left p {
+  padding-top: clamp(17px, 3.36vw, 35px);
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+}
+main .popular-courses .popular-courses-left a {
+  color: rgb(141, 92, 246);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Montserrat";
+  padding-top: clamp(17px, 3.36vw, 35px);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+main .popular-courses .popular-courses-right {
+  max-width: 499px;
+}
+main .popular-courses .popular-courses-right img {
+  width: 100%;
+}
+main #courses {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+main #courses .courses-container {
+  font-family: "Montserrat";
+}
+main #courses .courses-container h6 {
+  font-weight: 700;
+  color: rgb(141, 92, 246);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+main #courses .courses-container h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: clamp(20px, 3.84vw, 40px);
+  letter-spacing: 0.2px;
+  line-height: 50px;
+}
+main #courses .courses-container p {
+  color: rgb(255, 255, 255);
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+}
+main #courses .courses-container .courses-cards {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 1000px) {
+  main #courses .courses-container .courses-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+main #courses .courses-container .courses-cards .course-card {
+  width: 238px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-top {
+  position: relative;
+  z-index: 1;
+  max-width: 238px;
+  height: 300px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-top img {
+  width: 100%;
+  height: 100%;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-top .sale {
+  width: 51px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(231, 64, 64);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 0 10px 0 10px;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-top .img-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  z-index: 2;
+  left: 49px;
+  bottom: 24px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-top .img-buttons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-top .img-buttons button img {
+  width: 25px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom {
+  background-color: rgb(255, 255, 255);
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom .rating {
+  padding-top: 10px;
+  width: 182px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom .rating .rating-star {
+  width: 50px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+  background-color: rgb(38, 51, 93);
+  padding: 5px 5px 5px 5px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom .rating .rating-star p {
+  font-size: 12px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom .rating p {
+  color: rgb(141, 92, 246);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom .titles {
+  padding-top: 10px;
+  width: 182px;
+  margin: 0 auto;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom .titles h5 {
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom .titles p {
+  padding-top: 10px;
+  color: rgb(115, 115, 115);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom .sales {
+  padding-top: 10px;
+  width: 182px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom .sales p {
+  color: rgb(115, 115, 115);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom .price {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 182px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom .price span {
+  color: rgb(189, 189, 189);
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom .price p {
+  color: rgb(255, 123, 82);
+}
+main #courses .courses-container .courses-cards .course-card .courses-card-bottom button {
+  margin-top: 10px;
+  margin-bottom: 35px;
+  margin-left: 25px;
+  gap: 10px;
+  background-color: transparent;
+  padding: 10px 20px 10px 20px;
+  border-radius: 37px;
+  border: 1px solid rgb(141, 92, 246);
+}
+main #pricing {
+  padding-bottom: 100px;
+}
+main #pricing .pricing-container {
+  font-family: "Montserrat";
+}
+main #pricing .pricing-container .pricing-top {
+  padding-bottom: 100px;
+}
+main #pricing .pricing-container .pricing-top h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: clamp(20px, 3.84vw, 40px);
+  letter-spacing: 0.2px;
+  line-height: 50px;
+}
+main #pricing .pricing-container .pricing-top h5 {
+  color: rgb(141, 92, 246);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+main #pricing .pricing-container .pricing-top p {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+main #pricing .pricing-container .pricing-bottom {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+@media (max-width: 1000px) {
+  main #pricing .pricing-container .pricing-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card {
+  padding-top: 35px;
+  max-width: 323px;
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card .new {
+  position: absolute;
+  z-index: 2;
+  width: 90px;
+  height: 90px;
+  background-color: rgb(231, 124, 64);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: clamp(15px, 2.29vw, 24px);
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  top: -29px;
+  right: -30px;
+  color: rgb(255, 255, 255);
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card .card-img {
+  max-width: 96px;
+  margin: 0 auto;
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card .card-img img {
+  width: 100%;
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card h1 {
+  padding-top: 35px;
+  max-width: 243px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  line-height: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1px;
+  line-height: 32px;
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card p {
+  padding-top: 35px;
+  text-align: center;
+  max-width: 243px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card .price {
+  max-width: 243px;
+  margin: 0 auto;
+  text-align: center;
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card .price p {
+  font-weight: 700;
+  font-size: clamp(20px, 3.84vw, 40px);
+  letter-spacing: 0.2px;
+  line-height: 50px;
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card .price span {
+  color: rgb(142, 194, 242);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card button {
+  margin-top: 35px;
+  margin-right: clamp(10px, 3.84vw, 40px);
+  margin-left: clamp(10px, 3.84vw, 40px);
+  color: rgb(255, 255, 255);
+  padding: 15px 80px 15px 80px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  border-radius: 5px;
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card ul {
+  padding-bottom: 50px;
+  padding-top: 35px;
+  max-width: 243px;
+  margin: 0 auto;
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card ul li {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card:not(:nth-child(2)) {
+  background-color: rgb(255, 255, 255);
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card:not(:nth-child(2)) h1 {
+  color: rgb(37, 43, 66);
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card:not(:nth-child(2)) p {
+  color: rgb(115, 115, 115);
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card:not(:nth-child(2)) .price p {
+  color: rgb(141, 92, 246);
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card:not(:nth-child(2)) button {
+  background-color: rgb(141, 92, 246);
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card:not(:nth-child(2)) ul li {
+  color: rgb(37, 43, 66);
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card:nth-child(2) {
+  background-color: rgb(141, 92, 246);
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card:nth-child(2) h1 {
+  color: rgb(255, 255, 255);
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card:nth-child(2) p {
+  color: rgb(255, 255, 255);
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card:nth-child(2) button {
+  background-color: rgb(45, 192, 113);
+}
+main #pricing .pricing-container .pricing-bottom .pricing-card:nth-child(2) ul li {
+  color: rgb(255, 255, 255);
+}
+main .solutions {
+  padding-bottom: 100px;
+}
+main .solutions .solutions-container {
+  font-family: "Montserrat";
+}
+main .solutions .solutions-container .solutions-top {
+  padding-bottom: 100px;
+}
+main .solutions .solutions-container .solutions-top h3 {
+  color: rgb(141, 92, 246);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+main .solutions .solutions-container .solutions-top h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: clamp(20px, 3.84vw, 40px);
+  letter-spacing: 0.2px;
+  line-height: 50px;
+}
+main .solutions .solutions-container .solutions-top h2 {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+main .solutions .solutions-container .solutions-bottom {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 1000px) {
+  main .solutions .solutions-container .solutions-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+main .solutions .solutions-container .solutions-bottom .solutions-card {
+  padding-left: clamp(47px, 8.99vw, 94px);
+  padding-right: clamp(47px, 8.99vw, 94px);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 508px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+main .solutions .solutions-container .solutions-bottom .solutions-card .card-img {
+  padding-bottom: 30px;
+  max-width: 128px;
+}
+main .solutions .solutions-container .solutions-bottom .solutions-card .card-img img {
+  border-radius: 50%;
+  width: 100%;
+}
+main .solutions .solutions-container .solutions-bottom .solutions-card p {
+  padding-bottom: 15px;
+  color: rgb(115, 115, 115);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  max-width: 320px;
+}
+main .solutions .solutions-container .solutions-bottom .solutions-card .stars {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+main .solutions .solutions-container .solutions-bottom .solutions-card ul li:nth-child(1) {
+  color: rgb(37, 43, 66);
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+main .solutions .solutions-container .solutions-bottom .solutions-card ul li:nth-child(2) {
+  color: rgb(115, 115, 115);
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 14px;
+  padding-top: 5px;
+}
+main .newsletter {
+  font-family: "Montserrat";
+  text-align: center;
+  padding-bottom: 100px;
+}
+main .newsletter h2 {
+  color: rgb(141, 92, 246);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+main .newsletter h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: clamp(20px, 3.84vw, 40px);
+  letter-spacing: 0.2px;
+  line-height: 50px;
+}
+main .newsletter h3 {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  padding-bottom: clamp(40px, 7.65vw, 80px);
+}
+main .newsletter form {
+  margin: 0 auto;
+  max-width: 750px;
+  border-radius: 5px;
+  max-height: 58px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+}
+@media (max-width: 835px) {
+  main .newsletter form {
+    max-width: 300px;
+  }
+}
+@media (max-width: 550px) {
+  main .newsletter form {
+    max-width: 100px;
+  }
+}
+main .newsletter form input {
+  background-color: transparent;
+  outline: 0;
+  padding-left: 20px;
+  border: 0;
+}
+main .newsletter form input::placeholder {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+main .newsletter form button {
+  background-color: rgb(141, 92, 246);
+  border-radius: 0px 5px 5px 0px;
+  padding: 15px 22.5px 15px 22.5px;
+  margin-left: 470px;
+}
+@media (max-width: 835px) {
+  main .newsletter form button {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 550px) {
+  main .newsletter form button {
+    margin-left: -90px;
+  }
+}
+
+footer {
+  font-family: "Montserrat";
+}
+footer .container .footer-cards {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+@media (max-width: 800px) {
+  footer .container .footer-cards {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+}
+footer .container .footer-cards ul li {
+  padding-bottom: 10px;
+}
+footer .container .footer-cards ul li a {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+footer .container .footer-cards ul li:nth-child(1) {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  padding-bottom: 20px;
+  line-height: 24px;
+}
+footer .container .footer-cards ul:nth-child(5) li {
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+footer .sub-footer {
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+}
+footer .sub-footer .container .sub-footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .sub-footer .container .sub-footer_container p {
+  color: rgb(115, 115, 115);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+footer .sub-footer .container .sub-footer_container nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+body {
+  background-color: rgb(38, 51, 93);
+}
+
+.container {
+  max-width: 1045px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

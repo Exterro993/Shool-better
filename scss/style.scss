@@ -1,0 +1,13 @@
+@import "./blocks/nullstyle";
+@import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/footer";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+  background-color:  rgba(38, 51, 93, 1);
+}
+.container{
+  max-width: 1045px;
+  // max-width: 90%;
+  margin: 0 auto;
+}
