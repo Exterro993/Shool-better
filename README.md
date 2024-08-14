@@ -1,0 +1,1 @@
+Делал по проекту https://www.figma.com/design/3gaEgXjLCitWPw1r1WAm76/School-Better---simple%C2%A0website-template%C2%A0download%C2%A0html%C2%A0with-css-for-school-(Community)?node-id=2689-3017&t=MP3aEfBof44tuD5k-0
